@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #4285f4;
-  --hover-color: #2b5ba9;
-  --bg-color: #f9f9f9;
-  --text-color: #333;
-  --border-color: #ddd;
+  --primary-color: #7A00FF;
+  --hover-color:  #7A00FF;
+  --bg-color: #1B1F3B;
+  --text-color: #947af3;
+  --border-color: #7A00FF;
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background: linear-gradient(135deg, #0f185a 0%, #12152E 50%, #1C1A2B 100%);
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -51,7 +51,7 @@ header::before {
   left: -20px;
   right: -20px;
   height: 1px;
-  background: linear-gradient(
+  background: linear-gradient( 
     90deg,
     transparent,
     rgba(66, 133, 244, 0.2),
@@ -89,17 +89,20 @@ h1 {
     135deg,
     var(--primary-color) 0%,
     #2b5ba9 50%,
-    #1a3c7c 100%
+    #9fb7e4 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
+  top : 10px;
+  left: 30px;
+    
 }
 
 .subtitle {
   font-size: 1.4rem;
-  color: #444;
+  color: #E0E0E0;
   margin-bottom: 20px;
   text-align: left;
   margin-top: 5px;
@@ -176,13 +179,15 @@ h1 {
 }
 
 .filter-panel {
-  background-color: white;
+  background-color: #d6d6ec;
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
+
+
 
 .filter-group {
   display: flex;
@@ -274,7 +279,7 @@ h1 {
 .no-results {
   text-align: center;
   padding: 40px;
-  color: #666;
+  color: #E0E0E0;
   grid-column: 1 / -1;
   background-color: white;
   border-radius: 12px;
@@ -307,7 +312,7 @@ h1 {
 }
 
 .card {
-  background-color: white;
+  background-color: 	#d6d6ec;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   padding: 20px;
@@ -333,8 +338,11 @@ h1 {
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);  
+  transition: all 0.3s ease;
+  color: black;
+  background-color: #f8f9fa;
+  box-shadow: 0 8px 12px #dedfe2;
   border-color: var(--primary-color);
 }
 
@@ -380,7 +388,7 @@ h1 {
 
 .card-data:hover {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--bg-color);
   transform: translateY(-1px);
 }
 
